@@ -30,7 +30,6 @@ int storeArr(amorphArray* inputArr, int value, short position){
     return errno;
 }
 
-//Update sys variable that updates itself when error occurs.
 int readArr(amorphArray* inputArr, short position){
     if(position < inputArr -> size && position >= 0)
     {

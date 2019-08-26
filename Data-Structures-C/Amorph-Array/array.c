@@ -49,12 +49,15 @@ int checkError()
         return 1;
     case EADDRNOTAVAIL:
         perror("Invalid size");
+        errno = 0;
         break;
     case EINVAL:
         perror("Array Index out of bounds");
+        errno = 0;
         break;
     default:
         perror("Error Creating Array");
+        errno = 0;
     }
     return 0;
 }

@@ -8,7 +8,7 @@ int createArr(amorphArray* inputArr, short dim){
     inputArr -> size = dim;
     inputArr -> abase = (int*) malloc(sizeof(int)*dim);
     if(inputArr -> abase == NULL){
-        errno = EADDRNOTAVAIL;
+        errno = EINVAL;
         return errno;
     }    
     errno = 0;
@@ -23,7 +23,7 @@ int storeArr(amorphArray* inputArr, int value, short position){
             errno = 0;
             return errno;
         }
-        errno = EADDRNOTAVAIL;
+        errno = EINVAL;
         return errno;
     }
     errno = EINVAL;
@@ -45,19 +45,15 @@ int checkError()
 {
     switch (errno)
     {
-    case 0:
-        return 1;
-    case EADDRNOTAVAIL:
-        perror("Invalid size");
-        errno = 0;
-        break;
-    case EINVAL:
-        perror("Array Index out of bounds");
-        errno = 0;
-        break;
-    default:
-        perror("Error Creating Array");
-        errno = 0;
+        case 0:
+            return 1;
+        case EINVAL:
+            perror("Error");
+            errno = 0;
+            break;
+        default:
+            perror("Error");
+            errno = 0;
     }
     return 0;
 }

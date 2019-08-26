@@ -41,6 +41,19 @@ int readArr(amorphArray* inputArr, short position){
     return errno;
 }
 
+int freeArr(amorphArray *inputArr)
+{
+    free(inputArr->abase);
+    inputArr->abase = NULL;
+    if (inputArr->abase == NULL)
+    {
+        errno = 0;
+        return 1;
+    }
+    errno = EINVAL;
+    return errno;
+}
+
 int checkError()
 {
     switch (errno)

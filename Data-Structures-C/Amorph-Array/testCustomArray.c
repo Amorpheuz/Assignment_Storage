@@ -65,5 +65,10 @@ int main(int argc, char const *argv[])
             printf("--------------------------------\n");
         }
     }
+    printf("Freeing up array's memory.\n");
+    freeArr(&arr);
+    if(checkError()){
+        printf("Memory freed!\n");
+    }
     return 0;
 }

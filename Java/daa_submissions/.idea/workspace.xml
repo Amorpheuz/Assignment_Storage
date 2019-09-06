@@ -3,19 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="dc51d67f-1ca5-4435-bc7f-91e2cbd85c52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/daa_submissions/META-INF/daa_submissions.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/daa/assign1/client/UnionTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/quickFind_Union_Weighted/client/UnionTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/daa/assign1/domain/QuickFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/quickFind_Union_Weighted/domain/QuickFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/daa/assign1/domain/QuickUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/quickFind_Union_Weighted/domain/QuickUnion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/daa/assign1/domain/UnionInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/quickFind_Union_Weighted/domain/UnionInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/daa/assign1/domain/WeightedPathCompressedUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/quickFind_Union_Weighted/domain/WeightedPathCompressedUnion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/daa/assign1/domain/WeightedUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/quickFind_Union_Weighted/domain/WeightedUnion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/daa/assign2/client/GraphDijkstraImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/client/GraphDijkstraImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/daa/assign2/client/graph.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/client/graph.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/daa/assign2/domain/DijkstraData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/domain/DijkstraData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/daa/assign2/domain/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/domain/Edge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/daa/assign2/domain/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/domain/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/daa/assign2/domain/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/domain/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/daa_submissions/com/daa/dijkstraImplementation/client/GraphDijkstraImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/daa_submissions/com/daa/dijkstraImplementation/client/GraphDijkstraImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/daa_submissions/com/daa/dijkstraImplementation/domain/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/daa_submissions/com/daa/dijkstraImplementation/domain/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/client/GraphDijkstraImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/client/GraphDijkstraImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/domain/DijkstraData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/domain/DijkstraData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/domain/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/domain/Graph.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +143,7 @@
       <workItem from="1567787926734" duration="109000" />
       <workItem from="1567788070942" duration="553000" />
       <workItem from="1567789891589" duration="35000" />
-      <workItem from="1567790054463" duration="1011000" />
+      <workItem from="1567790054463" duration="4188000" />
     </task>
     <servers />
   </component>

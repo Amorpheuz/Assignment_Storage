@@ -20,7 +20,7 @@ public class Graph {
     }
 
     public void printGraph(){
-        for (int iterator = 0; iterator < this.adjNodes.size(); iterator++) {
+        for (int iterator = 0; iterator < vertices; iterator++) {
             for (Node node : this.adjNodes.get(iterator)) {
                 System.out.print(iterator + " --> " + node.value + " (" + node.weight + ") ");
             }

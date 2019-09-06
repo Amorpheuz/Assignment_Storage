@@ -14,6 +14,18 @@ public class DijkstraData {
         this.prevVertex = prevVertex;
     }
 
+    public int getPrevVertex() {
+        return prevVertex;
+    }
+
+    public int getVertex() {
+        return vertex;
+    }
+
+    public int getShortestDist() {
+        return shortestDist;
+    }
+
     @Override
     public String toString() {
         return "DijkstraData{" +

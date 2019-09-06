@@ -10,9 +10,7 @@ import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.*;
 
 import static java.lang.Integer.parseInt;
 
@@ -52,8 +50,66 @@ public class GraphDijkstraImplementation {
         ArrayList<DijkstraData> dijkstraData = graph.getDijkstraTable(sourceNode);
         System.out.println("Graph:");
         graph.printGraph();
-        for (DijkstraData data : dijkstraData){
-            System.out.println(data.toString());
+
+        boolean loopRunner = true;
+        while (loopRunner){
+            System.out.print("Select option to perform:\n\t1. Print MST\n\t2. Print Shortest path to a node(weights)\n\t3. Print Shortest path to a node(nodes)\n\t4. Exit\nAnswer: ");
+            int option = Integer.parseInt(bufferedReader.readLine());
+            int node = Integer.MAX_VALUE;
+            switch (option){
+                case 1:
+                    System.out.println("Minimum Spanning Tree: ");
+                    for (DijkstraData data : dijkstraData){
+                        System.out.println(data);
+                    }
+                    break;
+                case 2:
+                    System.out.print("Enter node: ");
+                    node = Integer.parseInt(bufferedReader.readLine());
+                    printShortestPath('w',dijkstraData,node);
+                    break;
+                case 3:
+                    System.out.print("Enter node: ");
+                    node = Integer.parseInt(bufferedReader.readLine());
+                    printShortestPath('n',dijkstraData,node);
+                    break;
+                case 4:
+                    loopRunner = false;
+                    break;
+                default:
+                    System.out.println("Invalid Option");
+            }
+        }
+    }
+
+    private static void printShortestPath(char type, ArrayList<DijkstraData> dijkstraData, int node){
+        DijkstraData data = dijkstraData.get(node);
+        ArrayList<Integer> integers = new ArrayList<>();
+        while (data.getPrevVertex() != data.getVertex()){
+            switch (type){
+                case 'w':
+                    integers.add(data.getShortestDist());
+                    break;
+                case 'n':
+                    integers.add(data.getVertex());
+            }
+            data = dijkstraData.get(data.getPrevVertex());
+        }
+        switch (type){
+            case 'w':
+                integers.add(data.getShortestDist());
+                break;
+            case 'n':
+                integers.add(data.getVertex());
+        }
+        Collections.reverse(integers);
+        for (int i : integers){
+            if (i == integers.get(integers.size()-1)){
+                System.out.println(i);
+            }
+            else {
+                System.out.print(i + " -> ");
+            }
         }
     }
 }

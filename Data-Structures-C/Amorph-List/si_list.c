@@ -82,10 +82,6 @@ SINODE* sin_insert(SINODE** head, int data, int pos)
   }
   SINODE* newTemp = (SINODE*)malloc(sizeof(SINODE));
   newTemp->data = data;
-  /* Since there is no way to know if the user is handling and updating the head on the 
-   * application side, I added a new node and moved the data in current head ahead in 
-   * case the pos was 0.
-   */
   if (pos == 0)
   {
     *head = newTemp;

@@ -1,7 +1,8 @@
 /*
  * si_list.c - Ane api to provide basic functions to create, read, write and process a list of integers.
  * 
- * author - Harshad Gune, harshad.gune@gmail.com
+ * definition author - Harshad Gune, harshad.gune@gmail.com
+ * implemented by - Yash Dave, mail2ypd@gmail.com
  * version - 1.0, August 31, 2019 
  */
 

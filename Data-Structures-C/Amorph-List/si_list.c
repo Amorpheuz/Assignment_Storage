@@ -88,12 +88,14 @@ SINODE* sin_insert(SINODE** head, int data, int pos)
    */
   if (pos == 0)
   {
-    newTemp -> data += temp -> data;
-    temp -> data = newTemp -> data - temp -> data;
-    newTemp -> data -= temp -> data;
+    *head = newTemp;
+    newTemp -> next = temp;
   }
-  newTemp->next = temp->next;
-  temp->next = newTemp;
+  else
+  {
+    newTemp->next = temp->next;
+    temp->next = newTemp;
+  }
   if (newTemp -> data == data)
   {
     return newTemp;

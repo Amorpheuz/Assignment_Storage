@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc51d67f-1ca5-4435-bc7f-91e2cbd85c52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/daa/primImplementation/client/GraphPrimImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/daa/primImplementation/client/graph.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/daa/primImplementation/domain/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/daa/primImplementation/domain/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/daa/primImplementation/domain/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/daa/primImplementation/domain/PrimData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/daa_submissions/META-INF/daa_submissions.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/daa_submissions/com/daa/dijkstraImplementation/client/GraphDijkstraImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/daa_submissions/com/daa/dijkstraImplementation/client/GraphDijkstraImplementation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/daa_submissions/com/daa/dijkstraImplementation/domain/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/daa_submissions/com/daa/dijkstraImplementation/domain/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/client/GraphDijkstraImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/client/GraphDijkstraImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/domain/DijkstraData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/domain/DijkstraData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/domain/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/daa/dijkstraImplementation/domain/Graph.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Inheritance" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/daa/primImplementation/client" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -48,6 +53,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.postfix.templates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Yash\Documents\GitHub\Assignment_Storage\Java\daa_submissions\src\com\daa\primImplementation\client" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.daa.primImplementation.domain" />
+      <recent name="com.daa.primImplementation.client" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com/daa/assign2/client" />
     </key>
@@ -64,7 +76,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GraphDijkstraImplementation (1)">
+  <component name="RunManager" selected="Application.GraphPrimImplementation">
+    <configuration name="GraphDijkstraImplementation (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.daa.dijkstraImplementation.client.GraphDijkstraImplementation" />
+      <module name="daa_submissions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GraphDijkstraImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.daa.assign2.domain.client.GraphDijkstraImplementation" />
       <module name="daa_submissions" />
@@ -91,6 +110,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GraphPrimImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.daa.primImplementation.client.GraphPrimImplementation" />
+      <module name="daa_submissions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UnionTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.daa.quickFind_Union_Weighted.client.UnionTester" />
       <module name="daa_submissions" />
@@ -106,6 +132,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GraphPrimImplementation" />
         <item itemvalue="Application.GraphDijkstraImplementation (1)" />
         <item itemvalue="Application.GraphDijkstraImplementation" />
         <item itemvalue="Application.UnionTester" />
@@ -143,7 +170,8 @@
       <workItem from="1567787926734" duration="109000" />
       <workItem from="1567788070942" duration="553000" />
       <workItem from="1567789891589" duration="35000" />
-      <workItem from="1567790054463" duration="4188000" />
+      <workItem from="1567790054463" duration="5230000" />
+      <workItem from="1567867974192" duration="6723000" />
     </task>
     <servers />
   </component>

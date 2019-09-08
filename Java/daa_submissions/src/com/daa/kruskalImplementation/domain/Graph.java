@@ -6,23 +6,16 @@ public class Graph {
 
     private Edge[] edges;
     private int vertices;
-    private int edges_no;
 
     public Graph(List<Edge> edges, int size) {
         vertices = size;
         this.edges = new Edge[edges.size()];
         this.edges = edges.toArray(this.edges);
-        this.edges_no = this.edges.length;
-        edges.sort(new Comparator<Edge>() {
-            @Override
-            public int compare(Edge o1, Edge o2) {
-                return o1.src - o2.src;
-            }
-        });
+        edges.sort(Comparator.comparingInt(o -> o.src));
         printGraph();
     }
 
-    public void printGraph(){
+    private void printGraph(){
         int temp = edges[0].src;
         for (Edge e : edges){
             if (temp != e.src){
@@ -35,31 +28,26 @@ public class Graph {
 
     public Edge[] getKrusKalMST(){
         Edge[] mstPath = new Edge[vertices];
-        int mst_iter = 0;
-        int sort_iter = 0;
+        int mstIter = 0;
+        int sortIter;
 
-        Arrays.sort(edges, new Comparator<Edge>() {
-            @Override
-            public int compare(Edge o1, Edge o2) {
-                return o1.weight - o2.weight;
-            }
-        });
+        Arrays.sort(edges, Comparator.comparingInt(o -> o.weight));
 
-        for (sort_iter = 0; sort_iter < vertices; sort_iter++)
-            mstPath[sort_iter] = new Edge();
+        for (sortIter = 0; sortIter < vertices; sortIter++)
+            mstPath[sortIter] = new Edge();
 
         WeightedUnion connectedNodes = new WeightedUnion(vertices);
-        sort_iter = 0;
+        sortIter = 0;
 
-        while (mst_iter < vertices - 1){
-            Edge tempEdge = new Edge();
-            tempEdge = edges[sort_iter++];
+        while (mstIter < vertices - 1){
+            Edge tempEdge;
+            tempEdge = edges[sortIter++];
 
             int rootX = connectedNodes.find(tempEdge.src);
             int rootY = connectedNodes.find(tempEdge.dest);
 
             if (rootX != rootY){
-                mstPath[mst_iter++] = tempEdge;
+                mstPath[mstIter++] = tempEdge;
                 connectedNodes.union(tempEdge.src,tempEdge.dest);
             }
         }

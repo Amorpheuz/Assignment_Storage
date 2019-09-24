@@ -61,8 +61,9 @@ public class Graph {
         int minDist = Integer.MAX_VALUE;
         for (DijkstraData data:dijkstraData){
             if (remainingNodes.contains(data.vertex)){
-                if (data.shortestDist < min){
+                if (data.shortestDist < minDist){
                     min = data.vertex;
+                    minDist = data.shortestDist;
                 }
             }
         }

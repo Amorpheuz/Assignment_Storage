@@ -25,4 +25,6 @@ int sin_length(SINODE* head);
 
 int sin_print(SINODE* curr);
 
+SINODE* sin_midpoint(SINODE* head);
+
 # endif

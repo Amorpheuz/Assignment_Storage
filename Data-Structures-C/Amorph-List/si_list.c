@@ -190,3 +190,27 @@ int sin_print(SINODE* curr)
   printf("%d\n", temp->data);
   return ++i;
 }
+
+/* sin_midpoint(): Returns the node in the middle of the list */
+SINODE* sin_midpoint(SINODE* head){
+  if (head == NULL)
+  {
+    errno = EINVAL;
+    return 0;
+  }
+
+  SINODE* parser = head;
+  SINODE* slow_parser = head;
+  int i = 0;
+  while (parser -> next != NULL)
+  {
+    if (i++ % 2 == 0)
+    {
+      slow_parser = slow_parser -> next;
+    }
+    
+    parser = parser -> next;
+  }
+  return slow_parser;
+}
+

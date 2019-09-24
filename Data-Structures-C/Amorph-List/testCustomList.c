@@ -14,7 +14,7 @@ void main()
     struct slnode* temp_address;
     while (1)
     {
-        printf("\n 1.Create \n 2.Add node \n 3.Insert node \n 4.Delete \n 5.Length of the list \n 6.Dispplay List \n 7.Exit\n");
+        printf("\n 1.Create \n 2.Add node \n 3.Insert node \n 4.Delete \n 5.Length of the list \n 6.Dispplay List \n 7.Find Midpoint \n 8.Exit\n");
         printf("Enter option :");
         scanf("%d",&choice);
         switch (choice)
